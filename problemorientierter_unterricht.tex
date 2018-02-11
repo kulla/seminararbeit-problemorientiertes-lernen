@@ -1,12 +1,17 @@
-\documentclass[12pt,a4paper]{scrartcl}
+\documentclass[jour,12pt,a4paper]{apa6}
 
 \usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
 \usepackage{amsmath}
-\usepackage{ngerman}
 \usepackage[onehalfspacing]{setspace}
+\usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
+
+\DeclareLanguageMapping{ngerman}{ngerman-apa}
+\addbibresource{literatur.bib}
 
 \title{Problemorientierter Unterricht}
 \author{Stephan Kulla}
+\affiliation{TU München}
 
 \begin{document}
 \maketitle
@@ -15,7 +20,7 @@
 
 \subsection{Wozu problemorientierter Unterricht?}
 
-Die Digitalisierung wird weitreichende Folgen und Auswirkungen auf die zukünftige Arbeitswelt haben\cite{dengler2015}. Wenn man beispielsweise der Studie von Osborne und Frey folgt \cite{frey2017}, so könnte in den USA in den nächsten 20 Jahren jeder zweite Job durch die Arbeit von Computer ersetzt werden. \cite{dengler2015} schätzen in ihrem Bericht, dass $15\%$ der Arbeitsplätze in Deutschland sehr wahrscheinlich durch die Einführung von Programmen wegfallen werden.
+Die Digitalisierung wird weitreichende Folgen und Auswirkungen auf die zukünftige Arbeitswelt haben \parencite{dengler2015}. Wenn man beispielsweise der Studie von \textcite{frey2017} folgt, so könnte in den USA in den nächsten 20 Jahren jeder zweite Job durch die Arbeit von Computer ersetzt werden. \cite{dengler2015} schätzen in ihrem Bericht, dass $15\%$ der Arbeitsplätze in Deutschland sehr wahrscheinlich durch die Einführung von Programmen wegfallen werden.
 
 Damit stellt sich die Frage an Lehrkräfte, wie sie ihre Schülerinnen und Schüler auf die neue Arbeitswelt vorbereiten können. So argumentiert Günter Dueck, dass das Bildungssystem neue Kompetenzen fördern muss: Soziale Kompetent, Kommunikationsfähigkeit, Problemlösefähigkeit und fachliche Kompetenzen sind einige der vielen Fähigkeiten (Wort?), die in der zukünftigen Arbeitswelt benötigt werden (Zitat).
 
@@ -100,7 +105,6 @@ Uns ist besonders wichtig, dass die Studierenden folgende Forschungsergebnisse z
   \item Überschriften im Titel groß anzeigen
 \end{itemize}
 
-\bibliographystyle{plain}
-\bibliography{literatur}
+\printbibliography
 
 \end{document}

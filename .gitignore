@@ -4,4 +4,6 @@
 *\.fdb_latexmk
 *\.fls
 *\.log
+*\.bcf
+*\.run\.xml
 problemorientierter_unterricht\.pdf
